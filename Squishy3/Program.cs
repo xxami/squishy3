@@ -9,8 +9,6 @@
         [STAThread]
         static void Main()
         {
-            //var container = TinyIoCContainer.Current;
-            //container.AutoRegister();
 
             using (var game = new Squishy3())
                 game.Run();
