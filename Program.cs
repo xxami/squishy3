@@ -1,13 +1,13 @@
-﻿using System;
-
-namespace squishy3
+﻿namespace Squishy3
 {
+    using System;
+
     public static class Program
     {
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new Squishy3())
                 game.Run();
         }
     }

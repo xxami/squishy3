@@ -1,15 +1,15 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-
-namespace squishy3
+﻿namespace Squishy3
 {
-    public class Game1 : Game
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
+    using Microsoft.Xna.Framework.Input;
+
+    public class Squishy3 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Game1()
+        public Squishy3()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
