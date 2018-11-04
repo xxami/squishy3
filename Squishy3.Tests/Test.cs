@@ -1,16 +1,12 @@
 namespace Squishy3.Tests
 {
-    using System;
-    using Xunit;
     using Shouldly;
 
-    public class Test
+    public class ValueTests
     {
-        [Fact]
-        public void ValueIsAValue()
+        public void ShouldBeValue()
         {
-            var value = 1;
-            value.ShouldBe(1);
+            1.ShouldBe(1);
         }
     }
 }
