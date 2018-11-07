@@ -1,15 +1,13 @@
-﻿namespace Squishy3
-{
-    using System;
-    using MicroResolver;
-    using SharpYaml;
+﻿
+namespace Squishy3 {
 
-    public static class Program
-    {
-        [STAThread]
-        static void Main()
-        {
+    using System.Threading;
+    using Config;
 
+    public static class Program {
+        static void Main() {
+            Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
+            var setup = new ContainerSetup();
             using (var game = new Squishy3())
                 game.Run();
         }
