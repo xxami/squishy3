@@ -1,21 +1,16 @@
 
 namespace Squishy3.Config {
 
-    using System.IO;
-    using SharpYaml;
-    using SharpYaml.Serialization;
+    using Reader;
 
     public class Settings : ISettings {
         private readonly string _settingsFile = "settings.yaml";
         public string ProfileName { get; set; }
         public Resolution Resolution { get; set; }
-        public Settings() {
-            var serializer = new Serializer();
-            using (var input = new StreamReader(_settingsFile)) {
-                var settings = serializer.Deserialize<Settings>(input);
-                ProfileName = settings.ProfileName;
-                Resolution = settings.Resolution;
-            }
+        public Settings(IConfigReader reader) {
+            var settings = reader.Read<Settings>(_settingsFile);
+            ProfileName = settings.ProfileName;
+            Resolution = settings.Resolution;
         }
     }
 
