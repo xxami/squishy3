@@ -1,5 +1,5 @@
 
-namespace Squishy3.Tests {
+namespace Squishy3.Tests.Config {
 
     using Shouldly;
 
