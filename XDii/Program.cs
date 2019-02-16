@@ -1,5 +1,5 @@
 ﻿
-namespace Squishy3 {
+namespace XDii {
 
     using System.Threading;
     using Config;
@@ -8,7 +8,7 @@ namespace Squishy3 {
         static void Main() {
             Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
             var setup = new ContainerSetup();
-            using (var game = new Squishy3())
+            using (var game = new XDii())
                 game.Run();
         }
     }

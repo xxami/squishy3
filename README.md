@@ -1,10 +1,9 @@
-## Squishy3
-Entry to GitHub's Game Off 2018 on itch.io 『https://lilah.itch.io/』
+## xdii bms player
 
 ## Build/run
 - `dotnet build`
-- `dotnet run --project Squishy3`
+- `dotnet run --project XDii`
 
 ## Test
-- `cd Squishy3.Tests`
-- `dotnet fixie`
+- `cd XDii.Tests`
+- `dotnet test`

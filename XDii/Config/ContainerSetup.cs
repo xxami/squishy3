@@ -1,5 +1,5 @@
 
-namespace Squishy3.Config {
+namespace XDii.Config {
 
     using System.IO;
     using System.IO.Abstractions;

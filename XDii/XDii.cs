@@ -1,15 +1,15 @@
 ﻿
-namespace Squishy3 {
+namespace XDii {
 
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
 
-    public class Squishy3 : Game {
+    public class XDii : Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Squishy3() {
+        public XDii() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;

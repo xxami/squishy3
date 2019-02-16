@@ -1,5 +1,5 @@
 
-namespace Squishy3.Config.Reader {
+namespace XDii.Config.Reader {
 
     using System.IO;
 

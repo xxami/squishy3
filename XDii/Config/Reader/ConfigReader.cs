@@ -1,7 +1,7 @@
 
 using System.Reflection.Metadata;
 
-namespace Squishy3.Config.Reader
+namespace XDii.Config.Reader
 {
   using System.IO;
   using System.IO.Abstractions;
